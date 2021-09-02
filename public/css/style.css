@@ -1,0 +1,12 @@
+@import url("https://fonts.google.com/specimen/Alata");
+@import url("https://fonts.google.com/specimen/Josefin+Sans");
+body {
+  font-size: 15px;
+  font-family: "Alata", serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+}

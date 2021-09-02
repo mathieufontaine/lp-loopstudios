@@ -1,0 +1,18 @@
+@import url("https://fonts.google.com/specimen/Alata");
+@import url("https://fonts.google.com/specimen/Josefin+Sans");
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 55%);
+$dark-gray: hsl(0, 0%, 41%);
+
+body {
+  font-size: 15px;
+  font-family: "Alata", serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+}

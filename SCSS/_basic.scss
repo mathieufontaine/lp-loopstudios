@@ -1,0 +1,75 @@
+@import url("https://fonts.google.com/specimen/Alata");
+@import url("https://fonts.google.com/specimen/Josefin+Sans");
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 55%);
+$dark-gray: hsl(0, 0%, 41%);
+$hero-image: url("/public/images/desktop/image-hero.jpg");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  color: $dark-gray;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: $black;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+  color: $white;
+}
+
+h2 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  line-height: 2rem;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  padding: 80px 0;
+}

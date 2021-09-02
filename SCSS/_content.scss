@@ -1,0 +1,14 @@
+.content {
+  position: relative;
+  img {
+    width: 65%;
+  }
+  &-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5rem;
+    width: 50%;
+    background: $white;
+  }
+}

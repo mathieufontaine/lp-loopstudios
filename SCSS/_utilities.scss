@@ -6,6 +6,19 @@ $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 55%);
 $dark-gray: hsl(0, 0%, 41%);
 $hero-image: url("/public/images/desktop/image-hero.jpg");
+$grid-image1: url("/public/images/desktop/image-deep-earth.jpg");
+$grid-image2: url("/public/images/desktop/image-night-arcade.jpg");
+$grid-image3: url("/public/./images/desktop/image-soccer-team.jpg");
+$grid-image4: url("/public/images/desktop/image-grid.jpg");
+$grid-image5: url("/public/images/desktop/image-from-above.jpg");
+$grid-image6: url("/public/images/desktop/image-pocket-borealis.jpg");
+$grid-image7: url("/public/images/desktop/image-curiosity.jpg");
+$grid-image8: url("/public/images/desktop/image-fisheye.jpg");
+
+@mixin setBackground($image-url) {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)),
+    $image-url;
+}
 
 *,
 *:before,
@@ -59,7 +72,7 @@ ul {
 }
 
 img {
-  width: 100%;
+  //   width: 100%;
 }
 
 .container {

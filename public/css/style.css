@@ -53,10 +53,6 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100%;
-}
-
 .container {
   position: relative;
   width: 80%;
@@ -148,4 +144,76 @@ h1 span {
   padding: 5rem;
   width: 50%;
   background: white;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.grid-card {
+  position: relative;
+}
+
+.grid-card .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  background: black;
+}
+
+footer .container {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-nav ul li {
+  padding: 2rem 1rem 0 0;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer-links i {
+  color: white;
+  padding: 0 1rem 2rem 0;
 }

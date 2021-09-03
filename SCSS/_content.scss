@@ -12,3 +12,29 @@
     background: $white;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  &-card {
+    position: relative;
+    // height: 300px;
+    .text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 2rem;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 3rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      //   background: rgba(#000000, 0.2);
+    }
+  }
+}
+
+// #card1 {
+//   @include setBackground($grid-image1);
+// }

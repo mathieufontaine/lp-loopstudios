@@ -5,8 +5,10 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 55%);
 $dark-gray: hsl(0, 0%, 41%);
-$hero-image: url("/public/images/desktop/image-hero.jpg");
-$hero-image-mobile: url("/public/images/mobile/image-hero.jpg");
+
+$hero-image: url("/images/desktop/image-hero.jpg");
+$hero-image-mobile: url("/images/mobile/image-hero.jpg");
+
 // $grid-image1: url("/public/images/desktop/image-deep-earth.jpg");
 // $grid-image2: url("/public/images/desktop/image-night-arcade.jpg");
 // $grid-image3: url("/public/./images/desktop/image-soccer-team.jpg");

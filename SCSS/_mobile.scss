@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .content {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    &-text {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+  p {
+    line-height: 4rem;
+    font-size: larger;
+  }
+  h1 {
+    font-size: 5rem;
+    padding: 3rem;
+    width: 100%;
+  }
+  h2 {
+    // font-size: 4rem;
+    text-align: center;
+  }
+  .container {
+    width: 90%;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+
+  //* menu
+
+  header {
+    height: 100vh;
+    position: relative;
+
+    nav {
+      height: 20vh;
+    }
+    .title {
+      height: 80vh;
+      justify-content: center;
+    }
+  }
+
+  #hamburger-open,
+  #hamburger-close {
+    width: 40px;
+  }
+
+  #menu-mobile {
+    .top-bar {
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem;
+      padding-bottom: 0;
+    }
+    &-open {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 3;
+      background: $black;
+
+      ul {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      li {
+        font-size: 4rem;
+        padding: 2rem;
+      }
+    }
+  }
+
+  //* content
+
+  .heading {
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    &-card {
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+      &-text {
+        width: 40%;
+      }
+    }
+  }
+  footer {
+    .container {
+      flex-direction: column;
+      padding: 8rem 0;
+    }
+    .footer-nav ul {
+      padding-top: 2rem;
+      flex-direction: column;
+      li {
+        padding: 2rem;
+      }
+    }
+    .footer-links {
+      align-items: center;
+      padding-top: 4rem;
+      i {
+        font-size: xx-large;
+      }
+    }
+  }
+}

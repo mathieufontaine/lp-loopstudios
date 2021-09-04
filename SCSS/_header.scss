@@ -1,10 +1,11 @@
 header {
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   background: $hero-image;
-  //   background-attachment: fixed;
   background-size: cover;
-  min-height: 400px;
+  background-position: top;
+  //   background-attachment: fixed;
   &:after {
     content: "";
     top: 0;
@@ -23,12 +24,12 @@ nav ul {
   justify-content: space-between;
 }
 
-nav {
-  height: 100px;
-}
-
-nav ul li {
-  padding: 10px;
+.navbar {
+  height: 10vh;
+  padding: 6rem 0;
+  ul li {
+    padding: 10px;
+  }
 }
 
 .title {
@@ -40,7 +41,7 @@ nav ul li {
 
 h1 {
   border: 2px solid white;
-  padding: 20px 60px 20px 30px;
+  padding: 2rem 6rem 2rem 3rem;
   span {
     display: block;
   }

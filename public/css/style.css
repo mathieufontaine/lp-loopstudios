@@ -10,11 +10,11 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-family: "Alata", sans-serif;
   color: dimgray;
@@ -28,20 +28,21 @@ h3 {
   font-weight: 300;
   color: black;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 
 p {
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 a {
@@ -53,6 +54,10 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   position: relative;
   width: 80%;
@@ -62,10 +67,43 @@ ul {
 
 section {
   position: relative;
-  padding: 80px 0;
+  padding: 6rem 0;
+}
+
+button {
+  display: inline-block;
+  border: 0;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 0rem 4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+.button-mobile {
+  margin: 5rem auto;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.show-mobile {
+  display: none;
 }
 
 header {
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +113,7 @@ header {
           flex-direction: column;
   background: url("/public/images/desktop/image-hero.jpg");
   background-size: cover;
-  min-height: 400px;
+  background-position: top;
 }
 
 header:after {
@@ -101,11 +139,12 @@ nav ul {
           justify-content: space-between;
 }
 
-nav {
-  height: 100px;
+.navbar {
+  height: 10vh;
+  padding: 6rem 0;
 }
 
-nav ul li {
+.navbar ul li {
   padding: 10px;
 }
 
@@ -122,7 +161,7 @@ nav ul li {
 
 h1 {
   border: 2px solid white;
-  padding: 20px 60px 20px 30px;
+  padding: 2rem 6rem 2rem 3rem;
 }
 
 h1 span {
@@ -142,8 +181,18 @@ h1 span {
   right: 0;
   bottom: 0;
   padding: 5rem;
-  width: 50%;
+  width: 55%;
   background: white;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .grid {
@@ -158,12 +207,13 @@ h1 span {
   position: relative;
 }
 
-.grid-card .text {
+.grid-card-text {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 2rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
   color: white;
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
@@ -216,4 +266,183 @@ footer .footer-links {
 footer .footer-links i {
   color: white;
   padding: 0 1rem 2rem 0;
+}
+
+footer footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .content .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content img {
+    display: block;
+    width: 100%;
+  }
+  .content-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+  p {
+    line-height: 4rem;
+    font-size: larger;
+  }
+  h1 {
+    font-size: 5rem;
+    padding: 3rem;
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .container {
+    width: 90%;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  header {
+    height: 100vh;
+    position: relative;
+  }
+  header nav {
+    height: 20vh;
+  }
+  header .title {
+    height: 80vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #hamburger-open,
+  #hamburger-close {
+    width: 40px;
+  }
+  #menu-mobile .top-bar {
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+  #menu-mobile-open {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    background: black;
+  }
+  #menu-mobile-open ul {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu-mobile-open li {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .grid-card {
+    height: 300px;
+  }
+  .grid-card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .grid-card-text {
+    width: 40%;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8rem 0;
+  }
+  footer .footer-nav ul {
+    padding-top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-nav ul li {
+    padding: 2rem;
+  }
+  footer .footer-links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4rem;
+  }
+  footer .footer-links i {
+    font-size: xx-large;
+  }
 }

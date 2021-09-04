@@ -29,11 +29,11 @@ $grid-image8: url("/public/images/desktop/image-fisheye.jpg");
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-family: "Alata", sans-serif;
   color: $dark-gray;
@@ -47,20 +47,21 @@ h3 {
   font-weight: 300;
   color: $black;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: $white;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 
 p {
-  line-height: 2rem;
+  line-height: 3rem;
 }
 a {
   text-decoration: none;
@@ -72,7 +73,7 @@ ul {
 }
 
 img {
-  //   width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -84,5 +85,36 @@ img {
 
 section {
   position: relative;
-  padding: 80px 0;
+  padding: 6rem 0;
+}
+
+button {
+  display: inline-block;
+  border: 0;
+  background: $white;
+  color: $black;
+  border: 1px solid black;
+  padding: 0rem 4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+
+.button-mobile {
+  margin: 5rem auto;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.show-mobile {
+  display: none;
 }

@@ -155,6 +155,10 @@ nav ul {
   border-bottom: 2px solid white;
 }
 
+.logo {
+  width: 200px;
+}
+
 .title {
   min-height: 300px;
   display: -webkit-box;
@@ -314,6 +318,9 @@ footer .footer-links i {
   html {
     font-size: 10px;
   }
+  .logo {
+    width: 180px;
+  }
   .grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -372,6 +379,7 @@ footer .footer-links i {
   header {
     height: 100vh;
     position: relative;
+    background-image: url("/public/images/mobile/image-hero.jpg");
   }
   header nav {
     height: 20vh;
@@ -381,6 +389,9 @@ footer .footer-links i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .logo {
+    width: 150px;
   }
   #hamburger-open,
   #hamburger-close {
@@ -456,6 +467,7 @@ footer .footer-links i {
   }
   .grid-card-text {
     width: 40%;
+    background: none;
   }
   footer .container {
     -webkit-box-orient: vertical;

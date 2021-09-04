@@ -2,6 +2,9 @@
   html {
     font-size: 10px;
   }
+  .logo {
+    width: 180px;
+  }
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -58,7 +61,7 @@
   header {
     height: 100vh;
     position: relative;
-
+    background-image: $hero-image-mobile;
     nav {
       height: 20vh;
     }
@@ -67,7 +70,9 @@
       justify-content: center;
     }
   }
-
+  .logo {
+    width: 150px;
+  }
   #hamburger-open,
   #hamburger-close {
     width: 40px;
@@ -125,6 +130,7 @@
       }
       &-text {
         width: 40%;
+        background: none;
       }
     }
   }

@@ -142,8 +142,12 @@
     .footer-nav ul {
       padding-top: 2rem;
       flex-direction: column;
+
       li {
         padding: 2rem;
+      }
+      li:first-of-type {
+        padding-left: 2rem;
       }
     }
     .footer-links {
@@ -151,6 +155,9 @@
       padding-top: 4rem;
       i {
         font-size: xx-large;
+      }
+      p {
+        text-align: center;
       }
     }
   }

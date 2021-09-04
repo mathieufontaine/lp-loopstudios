@@ -48,6 +48,7 @@ p {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 ul {
@@ -146,6 +147,12 @@ nav ul {
 
 .navbar ul li {
   padding: 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.navbar ul li:hover {
+  border-bottom: 2px solid white;
 }
 
 .title {
@@ -166,6 +173,10 @@ h1 {
 
 h1 span {
   display: block;
+}
+
+h1 #span-title {
+  display: inline;
 }
 
 .content {
@@ -205,11 +216,29 @@ h1 span {
 
 .grid-card {
   position: relative;
+  cursor: pointer;
+}
+
+.grid-card img {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.grid-card:hover img {
+  opacity: 0.5;
+}
+
+.grid-card:hover .grid-card-text {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background: black;
 }
 
 .grid-card-text {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  bottom: 5px;
   left: 0;
   padding: 2rem;
   text-transform: uppercase;
@@ -218,6 +247,9 @@ h1 span {
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 footer {
@@ -225,7 +257,7 @@ footer {
 }
 
 footer .container {
-  min-height: 120px;
+  min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,6 +267,7 @@ footer .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 4rem 0;
 }
 
 footer .footer-nav ul {
@@ -247,7 +280,15 @@ footer .footer-nav ul {
 }
 
 footer .footer-nav ul li {
-  padding: 2rem 1rem 0 0;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+footer .footer-nav ul li:hover {
+  border-bottom: 2px solid white;
+}
+
+footer .footer-nav ul li:first-of-type {
+  padding-left: 0;
 }
 
 footer .footer-links {
@@ -266,13 +307,7 @@ footer .footer-links {
 footer .footer-links i {
   color: white;
   padding: 0 1rem 2rem 0;
-}
-
-footer footer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -366,14 +401,17 @@ footer footer {
     padding-bottom: 0;
   }
   #menu-mobile-open {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    top: 0;
+    top: -1000px;
     left: 0;
     height: 100vh;
     width: 100%;
     z-index: 3;
     background: black;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   #menu-mobile-open ul {
     height: 80vh;
